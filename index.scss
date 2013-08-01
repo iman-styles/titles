@@ -1,0 +1,181 @@
+// Various title styles are applied via classes so it doesn't
+// matter which element you use
+//
+// .title-1 - Title
+// .title-2 - Title
+// .title-3 - Title
+//
+// Styleguide 2.1.0
+
+.title-1 {
+  @include improve-text-rendering;
+  font-size: size(9); // 36px
+  font-weight: 400;
+  line-height: baseline(2); // 40px
+}
+
+.title-2 {
+  @include improve-text-rendering;
+  font-size: size(6); // 27px
+  font-weight: 400;
+  line-height: baseline(1.7); // 34px
+}
+
+.title-3 {
+  @include improve-text-rendering;
+  font-size: size(4); // 20px
+  font-weight: 400;
+  line-height: baseline(1.35); // 27px
+}
+
+.title-4 {
+  @include improve-text-rendering;
+  font-size: size(2); // 14px
+  font-weight: 600;
+  line-height: baseline(1); // 20px
+}
+
+.title-5 {
+  @include improve-text-rendering;
+  font-size: size(10); // 48px
+  font-weight: 400;
+  line-height: baseline(3); // 60px
+}
+
+
+.title-6 {
+  @include improve-text-rendering;
+  font-size: size(5); // 24px
+  line-height: baseline(1.50); // 30px
+}
+
+.title--roboto {
+  font-family: $font-family-roboto;
+}
+
+.title--sans {
+  font-family: $font-family-opensans;
+}
+
+
+// Title weights
+// -------------------------------------------------------
+
+.title--weight100 {
+  font-weight: 100;
+}
+.title--weight300 {
+  font-weight: 300;
+}
+.title--weight400 {
+  font-weight: 400;
+}
+.title--weight500 {
+  font-weight: 500;
+}
+.title--weight600 {
+  font-weight: 600;
+}
+.title--weight700 {
+  font-weight: 700;
+}
+
+// Modifiers
+// -------------------------------------------------------
+
+// Title modifiers, to be used in conjunction with a .title-* class
+//
+// .title--caps - Title Modifier
+// .title--small - Title Modifier
+// .title--inverse - Title Modifier
+//
+// Styleguide 2.1.1
+
+.title--blue {
+  color: $blue-light;
+}
+
+.title--blue-light {
+  color: $blue-lightest;
+}
+
+.title--green {
+  color: $green;
+}
+
+.title--grey {
+  color: $grey-darkest;
+}
+
+.title--white {
+  color: $white;
+}
+
+.title--purple {
+  color: $purple-light;
+}
+
+.title--caps {
+  text-transform: uppercase;
+}
+
+.title--small {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.title--inverse {
+  a,
+  a:hover,
+  & {
+    color: $white;
+  }
+}
+
+
+.sub-title {
+  bottom: 7px;
+  display: inline-block;
+  font-family: $font-family-roboto;
+  font-style: italic;
+  font-weight: 500;
+  line-height:  27px;
+  padding: 0 5px;
+  position: relative;
+  text-transform: uppercase;
+
+  &:after,
+  &:before {
+    position: absolute;
+    content:"";
+    top: 0;
+    bottom: 0;
+    display: block;
+  }
+
+  &:after {
+    border-right: 10px solid transparent;
+    border-left: 0px solid transparent;
+    border-top: 27px solid black;
+    right: -10px;
+  }
+
+  &:before {
+    left: -10px;
+    border-left: 10px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 27px solid black;
+  }
+}
+
+
+.sub-title--purple {
+  color: #fff;
+  background: $purple-light;
+
+  &:after,
+  &:before {
+    border-top-color: $purple-light;
+    border-bottom-color: $purple-light;
+  }
+}
