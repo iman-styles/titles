@@ -18,7 +18,8 @@
   @include improve-text-rendering;
   font-size: size(6); // 27px
   font-weight: 400;
-  line-height: baseline(1.7); // 34px
+  line-height: baseline(1.5); // 34px
+  letter-spacing: -0.5px;
 }
 
 .title-3 {
