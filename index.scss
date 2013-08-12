@@ -169,7 +169,6 @@
   }
 }
 
-
 .sub-title--purple {
   color: #fff;
   background: $purple-light;
@@ -179,4 +178,14 @@
     border-top-color: $purple-light;
     border-bottom-color: $purple-light;
   }
+}
+
+.mbs-badge {
+  background: #888;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 13px;
+  padding: 2px 4px;
 }
