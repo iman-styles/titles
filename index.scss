@@ -18,7 +18,7 @@
   @include improve-text-rendering;
   font-size: size(6); // 27px
   font-weight: 400;
-  line-height: baseline(1.5); // 34px
+  line-height: baseline(1.5); // 30px
   letter-spacing: -0.5px;
 }
 
@@ -42,7 +42,6 @@
   font-weight: 400;
   line-height: baseline(3); // 60px
 }
-
 
 .title-6 {
   @include improve-text-rendering;
@@ -133,7 +132,9 @@
   }
 }
 
-
+/*
+  Product sub title
+ */
 .sub-title {
   bottom: 7px;
   display: inline-block;
@@ -180,6 +181,9 @@
   }
 }
 
+/*
+  MBS badge
+*/
 .mbs-badge {
   background: #888;
   border-radius: 2px;
