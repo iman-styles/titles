@@ -49,6 +49,13 @@
   line-height: baseline(1.50); // 30px
 }
 
+.title-7 {
+  @include improve-text-rendering;
+  font-size: 30px;
+  line-height: baseline(1.7);
+  letter-spacing: -0.5px;
+}
+
 .title--roboto {
   font-family: $font-family-roboto;
 }
