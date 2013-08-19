@@ -1,60 +1,5 @@
-// Various title styles are applied via classes so it doesn't
-// matter which element you use
-//
-// .title-1 - Title
-// .title-2 - Title
-// .title-3 - Title
-//
-// Styleguide 2.1.0
-
-.title-1 {
-  @include improve-text-rendering;
-  font-size: size(9); // 36px
-  font-weight: 400;
-  line-height: baseline(2); // 40px
-}
-
-.title-2 {
-  @include improve-text-rendering;
-  font-size: size(6); // 27px
-  font-weight: 400;
-  line-height: baseline(1.5); // 30px
-  letter-spacing: -0.5px;
-}
-
-.title-3 {
-  @include improve-text-rendering;
-  font-size: size(4); // 20px
-  font-weight: 400;
-  line-height: baseline(1.35); // 27px
-}
-
-.title-4 {
-  @include improve-text-rendering;
-  font-size: size(2); // 14px
-  font-weight: 600;
-  line-height: baseline(1); // 20px
-}
-
-.title-5 {
-  @include improve-text-rendering;
-  font-size: size(10); // 48px
-  font-weight: 400;
-  line-height: baseline(3); // 60px
-}
-
-.title-6 {
-  @include improve-text-rendering;
-  font-size: size(5); // 24px
-  line-height: baseline(1.50); // 30px
-}
-
-.title-7 {
-  @include improve-text-rendering;
-  font-size: 30px;
-  line-height: baseline(1.7);
-  letter-spacing: -0.5px;
-}
+// Title font families
+// -------------------------------------------------------
 
 .title--roboto {
   font-family: $font-family-roboto;
@@ -64,6 +9,43 @@
   font-family: $font-family-opensans;
 }
 
+// Title sizes
+// -------------------------------------------------------
+
+.title-1,
+.title-2,
+.title-3,
+.title-4,
+.title-5 {
+  @include improve-text-rendering;
+  @extend .title--roboto;
+}
+
+.title-1 {
+  font-size: size(9); // 36px
+  line-height: baseline(2); // 40px
+}
+
+.title-2 {
+  font-size: size(5); // 24px
+  line-height: baseline(1.5); // 30px
+}
+
+.title-3 {
+  font-size: size(4); // 20px
+  line-height: baseline(1.35); // 27px
+}
+
+.title-4 {
+  font-size: size(2); // 14px
+  line-height: baseline(1); // 20px
+}
+
+.title-5 {
+  font-size: 30px;
+  line-height: baseline(1.7);
+  letter-spacing: -0.5px;
+}
 
 // Title weights
 // -------------------------------------------------------
